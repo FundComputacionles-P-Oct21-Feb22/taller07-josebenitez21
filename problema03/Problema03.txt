@@ -1,0 +1,23 @@
+Problema03 (miniespecificación -use ciclo mientras-)
+Generar e imprimir la siguiente serie:
++1/1-1/3+1/5-1/7+1/9
+
+1.  Inicio
+2.  limite, i[0, n] <-- 10
+3.  numerador, i[0, n] <-- 1
+4.  denominador, i[0, n] <-- 1
+5.  cadenaFinal, x(1000)[{0-9},{-,+, BS, /}] <-- ""
+6.  suma, x(1) [{+}]
+7.  resta, x(1) [{-}]
+8.  signo, x(1) [{+,-}]
+9.  Mientras ( denominador <= limite) haga
+10. 	Si((denominador = 3 ) OR (denominador = 7 )) entonces
+11.           signo <-- resta
+12.           Caso contrario
+13.           signo <-- suma
+14. Fin si
+15. cadenaFinal <-- "signo" + numerador + "/" + denominador + " "
+16. denominador <-- denominador + 2
+17. Escribir cadenaFinal
+18. Fin Mientras
+19. Fin
